@@ -1,0 +1,403 @@
+
+@font-face {
+    font-family: sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+}
+
+
+
+
+
+*{
+    font-family: 'Noto Sans JP', sans-serif;
+   
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+ul{
+    padding-left: 0rem;
+}
+
+header {
+    
+    font-size: 11px;
+    height: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(41, 238, 90);
+    margin-left: 15px;
+}
+
+header .left-text{
+    margin-right: auto;
+    margin-left: 20px;
+}
+
+.left-text , .right-text {
+    color: white;
+}
+
+.right-text{
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 20px;
+}
+
+
+
+.right-text span{
+    font-size: 9px;
+}
+
+.top-tel{
+    margin-right: 10px;
+}
+
+
+
+
+nav {
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+   
+}
+
+#logo{
+    margin: 10px;
+}
+
+#logo div{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+}
+
+#logo div:hover{
+    cursor: pointer;
+    color: grey;
+    transition: 1s all;
+}
+
+
+#navbr {
+    margin-left: auto;
+}
+
+#menu {
+    
+}
+
+#menu >  ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px;
+    margin-right: 20px;
+    position: relative;
+   
+}
+
+
+#menu > ul  > li{
+    margin: 10px;
+}
+
+
+#menu > ul  li  a {
+    color: black;
+    text-decoration: none;
+}
+
+.openmenu {
+    display: relative;
+}
+
+.btmenu {
+    position: relative;
+    display: none;
+}
+
+#menu > ul > .openmenu:focus-within  .btmenu{
+   display: inline;
+   position: absolute;
+   top: 100%;
+   width: 150px;
+   z-index: 3;
+
+   
+}
+
+.btmenu li a{
+    color: black;
+    text-decoration: none;
+
+   }
+
+
+   .btmenu li {
+      
+    background-color: burlywood;
+   }
+
+
+   #menu > ul  li  {
+       box-sizing:border-box;
+       padding: 4px;
+    
+ }
+
+ #menu > ul  li a {
+       
+    padding-bottom: 15px;
+
+      
+       
+ }
+
+
+   #menu > ul  li a:hover  {
+       
+    border-bottom:1.5px solid rgb(24, 241, 4) ;
+
+  
+}
+
+
+
+
+
+#carouselExampleIndicators,.carousel-inner{
+    height: 45vh;
+}
+
+.carousel-item{
+    position: relative;
+
+}
+.carousel-text{
+   
+    position: absolute;
+
+}
+
+
+#carouselExampleIndicators img{
+    position: absolute;
+    top: -250px;
+}
+
+#twoSection {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+ .box1Parent,.box2Parent {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    position: relative;
+   
+    
+   
+    
+} 
+
+.box1,.box2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: absolute;
+    font-size: 15px;
+    background-color: rgba(2, 97, 10, 0.514);
+    width: 100%;
+    height: 100%;
+    border-radius:40px;
+}
+
+
+.bx1,.bx2{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    color: white;
+    
+    font-size: 10px;
+    
+    background-color: rgba(7, 75, 153, 0.651);
+    border-radius: 40px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    
+}
+
+.box1Parent:hover .bx1{
+    opacity: 1;
+    transition: 1s all;
+    cursor: pointer;
+    background-color: rgb(7, 75, 153);
+    border-top-left-radius: 0px;
+    
+    
+}
+
+.box2Parent:hover .bx2{
+    opacity: 1;
+    transition: 1s all;
+    cursor: pointer;
+    
+}
+
+.box1{
+    background: url("../img/computer.png");
+    repeat:no-repeat;
+
+}
+
+.box2{
+    background: url("../img/blog.png");
+    
+}
+
+#card {
+    margin-left: 50px;
+    position: relative;
+    width: 200;
+    height: auto;
+    border: 1px solid black;
+    padding: 10px;
+    box-sizing: content-box;
+}
+
+#card-body {
+    padding: 0px;
+    width: auto;
+    
+    
+    
+    z-index: 3;
+}
+
+.card-body-head{
+    
+}
+
+.body-left{
+    display: inline-block;
+}
+
+
+.body-right{
+    display: inline-block;
+    position: relative;
+    float: right;
+    margin-right: 5px;
+    background-color: red;
+    color: white;
+    width: 70px;
+    text-align: center;
+}
+
+
+
+
+
+.card-img {
+    background-color: rgb(172, 9, 9);
+    height:373;
+}
+
+#card-body-footer{
+    height: 50px;
+    position: relative;
+    margin-top: -50px;
+    display: none;
+
+}
+
+#card-body-footer ul{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(92, 92, 16, 0.5);
+    text-align: center;
+}
+
+#card-body-footer ul li{
+   display: inline-block;
+   margin:2;
+   color: white;
+   border: 1px solid white;
+   width:30px;
+   height: 30px;
+   border-radius: 50%; 
+}
+
+#card-body-footer ul li:hover{
+    border: 1px solid red;
+    cursor: pointer;
+    transition: 0.4s all;
+ }
+
+ #card-body-footer ul li:checked{
+    color: rgba(4, 19, 48, 0.493);
+ }
+
+#card-foot{
+    padding: 0px;
+    position: relative;
+
+}
+
+p:nth-child(4) {
+  text-decoration: line-through;
+}
+
+#card h5,i{
+    display: inline-block;
+    
+}
+
+
+#card h5,i,p{
+    
+}
+
+#card i{
+   
+    float: right;
+ 
+}
+
+.liked{
+color: red;
+}
+
+
+.discount{
+    background-color: red;
+    text-align: center;
+    color: white;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    #menu ul {
+        display: block;
+    }
+  }
